@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Transition from 'react-transition-group/Transition';
+import CSSTransition from 'react-transition-group/CSSTransition';
 
 class App extends Component {
 
@@ -21,26 +21,21 @@ class App extends Component {
         isOn: !isOn
       }
     })
-    // entering
-    // entered
-    // exiting
-    // exited
   }
 
   render() {
     const { state } = this;
     return (
       <div>
-        <Transition in={state.isOn} mountOnEnter={true} appear={true} timeout={{
+        <CSSTransition in={state.isOn} timeout={{
           enter: 300,
           exit: 500
-        }}>
-          {
-            (status) => {
-              return <button onClick={this.handleClick} className={'btn ' + status} >CLICK</button>
-            }
-          }
-        </Transition>
+        }} classNames={{
+          enter: 'entrando',
+          exitDone: 'saindo'
+        }} >
+          <button onClick={this.handleClick} className={'btn'} >CLICK</button>
+        </CSSTransition>
       </div>
     );
   }
