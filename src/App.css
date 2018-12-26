@@ -1,12 +1,15 @@
 .btn{
+  position: relative;
+  left: 0;
+  opacity: 1;
   transition: all 0.5s ease;
-}
 
-.ligado{
   background-color: green;
   color: white;
 }
 
-.desligado{
+.btn.exited, .btn.entering{
+  left: 100px;
+  opacity: 0;
   background-color: gray;
 }
