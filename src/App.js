@@ -3,23 +3,29 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      isOn: true
+    }
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(){
+    this.setState(({isOn}) => {
+      return {
+        isOn: !isOn
+      }
+    })
+  }
+
   render() {
+    const { state } = this;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <button onClick={this.handleClick} className={'btn ' + (state.isOn ? 'ligado' : 'desligado')} >CLICK</button>
       </div>
     );
   }
