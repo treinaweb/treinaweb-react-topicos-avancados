@@ -3,12 +3,24 @@
 import React, { Component } from 'react';
 import './App.css';
 
+type Props = {
+  name?: string,
+  age: number,
+  isActive: boolean,
+  nameList: Array<string>
+}
 
-class App extends Component {
+type State = {
+  counter: number
+}
 
-  constructor(props){
+
+class App extends Component <Props, State> {
+
+  constructor(props: Props){
     super(props);
     this.state = {
+      counter: 0
     }
 
   }
