@@ -6,6 +6,8 @@ import Index from './views/index';
 import About from './views/about';
 import Address from './views/about/address';
 
+const TextCounter = React.lazy(() => import('./components/TextCounter'));
+
 class App extends Component {
 
   constructor(props){
