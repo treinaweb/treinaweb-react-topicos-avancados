@@ -34,8 +34,8 @@ class App extends Component {
             </nav>
             <Switch>
               <Route path="/" exact component={Index} />
-              <Route path="/:abc" component={Address} />
               <Route path="/about" component={About} />
+              <Route path="/:abc" component={Address} />
             </Switch>
           </div>
         </Router>
