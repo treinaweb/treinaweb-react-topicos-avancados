@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Prompt, Switch } from 'react-router-dom';
 
@@ -24,6 +24,12 @@ class App extends Component {
         <Router>
           <div>
             <Prompt when={false} message={(location) => `Tem certeza que deseja ir para ${location.pathname}?`} />
+
+            <Suspense fallback={<div>Loading...</div>} >
+              <TextCounter />
+            </Suspense>
+
+
             <nav>
               <ul>
                 <li>
