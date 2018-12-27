@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import ClickCounter from './components/ClickCounter';
+
 
 class App extends Component {
 
@@ -16,6 +18,7 @@ class App extends Component {
     return (
       <div>
         <h1>Hello!</h1>
+        <ClickCounter />
       </div>
     );
   }
