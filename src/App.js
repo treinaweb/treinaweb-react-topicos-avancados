@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link, Prompt } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Prompt, Switch } from 'react-router-dom';
 
 import Index from './views/index';
 import About from './views/about';
+import Address from './views/about/address';
 
 class App extends Component {
 
@@ -31,8 +32,11 @@ class App extends Component {
                 </li>
               </ul>
             </nav>
-            <Route path="/" exact component={Index} />
-            <Route path="/about" component={About} />
+            <Switch>
+              <Route path="/" exact component={Index} />
+              <Route path="/:abc" component={Address} />
+              <Route path="/about" component={About} />
+            </Switch>
           </div>
         </Router>
       </div>
