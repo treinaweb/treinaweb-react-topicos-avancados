@@ -23,15 +23,15 @@ class App extends Component {
             <nav>
               <ul>
                 <li>
-                  <Link to="/" >Home</Link>
+                  <Link to="/about/abc" >Home</Link>
                 </li>
                 <li>
-                  <Link to="/about/" >About</Link>
+                  <Link to="/about/def" >About</Link>
                 </li>
               </ul>
             </nav>
             <Route path="/" exact component={Index} />
-            <Route path="/about/" component={About} />
+            <Route path="/about/:minhaVariavel(abc|def)" component={About} />
           </div>
         </Router>
       </div>
