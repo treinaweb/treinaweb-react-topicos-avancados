@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "@loadable/component": "^5.2.2",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
+    "react-test-renderer": "^16.7.0",
     "react-transition-group": "^2.5.2"
   },
   "devDependencies": {
