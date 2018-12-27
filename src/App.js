@@ -1,11 +1,12 @@
 import React, { Component, Suspense } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Prompt, Switch } from 'react-router-dom';
+import loadable from '@loadable/component';
 
 import About from './views/about';
 import Address from './views/about/address';
 
-const Index = React.lazy(() => import('./views/index'));
+const Index = loadable(() => import('./views/index'));
 const TextCounter = React.lazy(() => import('./components/TextCounter'));
 
 class App extends Component {
