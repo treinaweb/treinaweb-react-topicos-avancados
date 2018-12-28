@@ -8,7 +8,6 @@ import { addLocaleData, IntlProvider, FormattedRelative } from 'react-intl';
 
 import ClickCounter from './components/ClickCounter';
 
-
 addLocaleData([...enLocaleData, ...jaLocaleData, ...ptLocaleData]);
 
 
@@ -28,7 +27,7 @@ class App extends Component {
       <div>
         <IntlProvider locale={state.currentLang} >
           <div>
-            <FormattedRelative value={new Date()} />
+            < ClickCounter />
           </div>
         </IntlProvider>
       </div>

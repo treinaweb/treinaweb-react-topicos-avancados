@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 class ClickCounter extends React.Component{
     constructor(props){
@@ -29,6 +30,20 @@ class ClickCounter extends React.Component{
                 </div>
                 <div>
                     <strong>Clicks:</strong> {state.totalClicks}
+                </div>
+                <div>
+                    <FormattedMessage 
+                        id="app.clicks"
+                        description="quantidade de cliques"
+                        values={state}
+                        defaultMessage="
+                            Ola, voce tem {totalClicks, plural,
+                                =0 {nenhum clique}
+                                one {# clique}
+                                other {# cliques}
+                            }
+                        "
+                    />
                 </div>
             </div>
         );
