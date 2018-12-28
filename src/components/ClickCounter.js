@@ -45,6 +45,19 @@ class ClickCounter extends React.Component{
                         "
                     />
                 </div>
+                <div>
+                    <FormattedMessage 
+                        id="app.select"
+                        description="selecao de palavras"
+                        values={state}
+                        defaultMessage="
+                            {isChecked, select,
+                                true {Estamos abertos}
+                                false {Abriremos em breve}
+                            }
+                        "
+                    />
+                </div>
             </div>
         );
     }
