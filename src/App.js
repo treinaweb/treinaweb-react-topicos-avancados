@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 
-import NewProductView from './views/NewProductView';
-import ProductListView from './views/ProductListView';
+const NewProductView = React.lazy(() => import('./views/NewProductView'));
+const ProductListView = React.lazy(() => import('./views/ProductListView'));
 
 class App extends Component {
   render() {
@@ -22,8 +22,10 @@ class App extends Component {
                 </ul>
               </header>
               <div>
-                <Route path={'/'} exact component={NewProductView} />
-                <Route path={'/list'} component={ProductListView} />
+                <Suspense  fallback={<div>Loading...</div>} >
+                  <Route path={'/'} exact component={(props) => <NewProductView {...props} />} />
+                  <Route path={'/list'} component={(props) => <ProductListView {...props} />} />
+                </Suspense>
               </div>
             </div>
         </Router>
