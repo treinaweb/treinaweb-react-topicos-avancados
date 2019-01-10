@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import { Channel } from '../services/EventService';
 
@@ -15,17 +16,20 @@ class ProductList extends Component{
         const { props } = this;
         return (
             <ul className="product-list">
-                {
-                    props.products.map(product => (
-                        <li key={product.id} className="product-list-item" >
-                            <button onClick={this.remove.bind(this, product)} >X</button>
-                            <img src={product.image} alt={ product.description } />
-                            <div>{ product.description }</div>
-                            <div>{ product.price }</div>
-                        </li>
-                    ))   
-                }
-                
+                <TransitionGroup>
+                    {
+                        props.products.map(product => (
+                            <CSSTransition key={product.id} timeout={300} classNames="product" >
+                                <li className="product-list-item" >
+                                    <button onClick={this.remove.bind(this, product)} >X</button>
+                                    <img src={product.image} alt={ product.description } />
+                                    <div>{ product.description }</div>
+                                    <div>{ product.price }</div>
+                                </li>
+                            </CSSTransition>
+                        ))   
+                    }
+                </TransitionGroup>
             </ul>
         )
     }
