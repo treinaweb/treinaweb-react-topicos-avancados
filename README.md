@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# TreinaWeb: curso ["React - Tópicos Avançados"](https://www.treinaweb.com.br/curso/)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Lista de branches
+|  | Branch | Descrição |
+| ------ | ------ |  ------ | 
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-02-01.zip)    |  aula-02-01     | Animações com Classes CSS |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-02-02.zip)    |  aula-02-02     | Transition |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-02-03.zip)    |  aula-02-03     | CSS Transition |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-02-04.zip)    |  aula-02-04     | Transition Group |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-03-01.zip)    |  aula-03-01     | Começando com o React Router |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-03-02.zip)    |  aula-03-02     | Parâmetros na URL |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-03-03.zip)    |  aula-03-03     | Evitando mudar de View |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-03-04.zip)    |  aula-03-04     | Aninhamento de Rotas |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-03-05.zip)    |  aula-03-05     | Renderizando apenas um componente com Switch |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-04-01.zip)    |  aula-04-01     | Imports dinâmicos com React.lazy |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-04-02.zip)    |  aula-04-02     | Carregando com Suspense |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-04-03.zip)    |  aula-04-03     | React.lazy e React Router |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-04-04.zip)    |  aula-04-04     | Loadable Components |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-05-01.zip)    |  aula-05-01     | Iniciando com Flow |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-05-02.zip)    |  aula-05-02     | Tipando Propriedades e Estados de Componentes |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-06-01.zip)    |  aula-06-01     | Preparando o Enzyme |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-06-02.zip)    |  aula-06-02     | Criando um componente para ser testado |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-06-03.zip)    |  aula-06-03     | Criando testes para componentes com Enzyme |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-07-01.zip)    |  aula-07-01     | Preparando o React Intl |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-07-02.zip)    |  aula-07-02     | Formatando números |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-07-03.zip)    |  aula-07-03     | Formatando datas e horários |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-07-04.zip)    |  aula-07-04     | Formatando datas relativas |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-07-05.zip)    |  aula-07-05     | Pluralização |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-07-06.zip)    |  aula-07-06     | Selecionando palavras de acordo com o valor |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-07-07.zip)    |  aula-07-07     | Traduções |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/projeto-02-01.zip)    |  projeto-02-01     | Projeto: Componentes da Aplicação |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/projeto-02-02.zip)    |  projeto-02-02     | Projeto: Adicionando Animações |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/projeto-03-01.zip)    |  projeto-03-01     | Projeto: Telas da Aplicação |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/projeto-04-01.zip)    |  projeto-04-01     | Projeto: Carregando apenas o necessário |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/projeto-07-01.zip)    |  projeto-07-01     | Projeto: Disponibilizando a Aplicação em outras Línguas |
