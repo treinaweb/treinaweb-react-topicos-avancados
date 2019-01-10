@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { FormattedNumber } from 'react-intl';
 
 import { Channel } from '../services/EventService';
 
@@ -24,7 +25,13 @@ class ProductList extends Component{
                                     <button onClick={this.remove.bind(this, product)} >X</button>
                                     <img src={product.image} alt={ product.description } />
                                     <div>{ product.description }</div>
-                                    <div>{ product.price }</div>
+                                    <div>
+                                        <FormattedNumber
+                                            value={product.price}
+                                            minimumFractionDigits={2}
+                                            maximumFractionDigits={2}
+                                         />
+                                    </div>
                                 </li>
                             </CSSTransition>
                         ))   
