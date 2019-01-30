@@ -1,5 +1,5 @@
 
-# TreinaWeb: curso ["React - Tópicos Avançados"](https://www.treinaweb.com.br/curso/)
+# TreinaWeb: curso ["React - Tópicos Avançados"](https://www.treinaweb.com.br/curso/react-topicos-avancados)
 
 
 
