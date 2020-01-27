@@ -15,6 +15,7 @@
 [Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-03-03.zip)    |  aula-03-03     | Evitando mudar de View |
 [Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-03-04.zip)    |  aula-03-04     | Aninhamento de Rotas |
 [Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-03-05.zip)    |  aula-03-05     | Renderizando apenas um componente com Switch |
+[Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-03-06.zip)    |  aula-03-06     | Utilizando Hooks do React Router |
 [Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-04-01.zip)    |  aula-04-01     | Imports dinâmicos com React.lazy |
 [Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-04-02.zip)    |  aula-04-02     | Carregando com Suspense |
 [Download](https://github.com/treinaweb/treinaweb-react-topicos-avancados/archive/aula-04-03.zip)    |  aula-04-03     | React.lazy e React Router |
