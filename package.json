@@ -10,6 +10,7 @@
     "react-transition-group": "^2.9.0"
   },
   "devDependencies": {
+    "@treinaweb/tw-dev-server": "^1.0.22",
     "react-scripts": "^3.4.1"
   },
   "scripts": {
