@@ -33,7 +33,7 @@ class ProductListView extends Component{
 
     async remove(productId){
         const { products } = this.state,
-            productIndex = products.findIndex(product => product.id == productId);
+            productIndex = products.findIndex(product => product.id === productId);
         await ProductService.remove(productId);
         products.splice(productIndex, 1);
         this.setState({products});
